@@ -2,7 +2,7 @@ POST http://localhost:3001/api/notes
 content-type: application/json
 
 {
-    "content" : "postman is very good tool",
-    "name": "sample",
-    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+    "content" : "HTML is easy",
+    "important": "true",
+    "date": "Wed, 21 Oct 2015 18:27:50 GMT"
 }
