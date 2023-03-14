@@ -1,9 +1,8 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-
 require('dotenv').config()
-require('./mongo')
+//require('./mongo')
 
 const Note = require('./models/Note')
 
@@ -35,6 +34,7 @@ const errorHandler = (error, request, response, next) => {
 app.use(cors());
 app.use(express.json());
 app.use(requestLogger)
+app.use(express.static('build'))
 
 //let notes = []
 
